@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Customer-App React app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,32 +39,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features
+1. View All Customers 
+   - "/" OR "/customers" 
+   - It will show list of all existing customers. None if no existing customers
+     - For Each customer in table, you will have 3 links
+       1. View will navigate to **View Customer Details**
+       2. Update wll navigate to **Update Customer**
+       3. Delete will Delete Customer
+   - It will also have a link to navigate to **Create New Customer**
+2. Create New Customer
+   - '/add-customer/_add'
+   - You can add details to create new customer
+   - On clicking of Save button customer will be created and you will be navigated to **View All Customers**
+   - On clicking of Cancel you will be navigated to **View All Customers**
+3. Update Customer
+   - '/add-customer/:id'
+   - You can modify details of existing customer
+   - On clicking of Save button customer will be created and you will be navigated to **View All Customers**
+   - On clicking of Cancel you will be navigated to **View All Customers**
+4. View Customer Details
+   - /view-customer/:id
+   - You can view customer details on this page
+   - back link will navigate to **View All Customers**
